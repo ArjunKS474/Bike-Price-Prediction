@@ -1,19 +1,18 @@
-# Diabetes Prediction Using Logistic Regression
+# Bike Price Prediction Using Linear Regression
 
-This project is aimed at predicting the onset of diabetes in patients using logistic regression.
+This project aims to predict the selling price of bikes using linear regression analysis based on various features. By leveraging these features, the goal is to develop a model that accurately estimates the selling price of bikes in the used market.
 
 # Dataset
 
 The dataset used for this project includes the following columns:
-- pregnancies: Number of times pregnant
-- glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
-- diastolic: Diastolic blood pressure (mm Hg)
-- triceps: Triceps skinfold thickness (mm)
-- insulin: 2-Hour serum insulin (mu U/ml)
-- bmi: Body mass index (weight in kg/(height in m)^2)
-- dpf: Diabetes pedigree function
-- age: Age (years)
-- diabetes: Class variable (0 or 1)
+- Brand: Brand of the bike
+- Model: Model of the bike
+- Selling_Price: Selling price of the bike (target variable)
+- Year: Year of purchase
+- Seller_Type: Type of seller (Individual or Dealer)
+- Owner: Ownership history (e.g., 1st owner, 2nd owner)
+- KM_Driven: Kilometers driven by the bike
+- Ex_Showroom_Price: Ex-showroom price of the bike when new
 
 # Library Packages
 
@@ -27,22 +26,22 @@ The dataset used for this project includes the following columns:
 **1. Data Preprocessing**
 - Load the dataset.
 - Handle missing values by imputing or removing them.
-- Normalize or standardize the data if necessary.
+- Encode categorical variables if necessary (e.g., Brand, Seller_Type).
   
 **2. Feature Selection**
-- Analyze the features and their correlation with the target variable.
-- Select features that contribute the most to the prediction.
+- Analyze the features and their correlation with the selling price.
+- Select features that significantly impact the bike's selling price
   
 **3. Model Training**
 - Split the data into training and testing sets.
-- Train the logistic regression model using the training set.
-- Tune hyperparameters to improve model performance.
+- Train the linear regression model using the training set.
+- Fine-tune hyperparameters to optimize model performance.
   
 **4. Model Evaluation**
 - Use the testing set to evaluate the model.
-- Calculate accuracy, precision, recall, and F1-score.
-- Plot the ROC curve and calculate the AUC.
+- Measure metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared to assess model accuracy.
+- Visualize predictions versus actual selling prices.
 
 # Conclusion
 
-Logistic regression effectively predicts diabetes using patient data, achieving reliable performance metrics. This model aids in early detection and management of diabetes.
+Linear regression proves effective in predicting bike selling prices based on various features, providing valuable insights for buyers and sellers in the used bike market. This model can facilitate informed decision-making and price negotiations.
